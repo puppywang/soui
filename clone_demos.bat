@@ -40,7 +40,7 @@ call :update_repo nsisdemo
 call :update_repo SouiWallPaper
 call :update_repo TczKline
 
-SET /p selected=1.ÊÇ·ñÉú³Ésoui_demo.sln¹¤³Ì[1=YES;Other=No]:
+SET /p selected=1.æ˜¯å¦ç”Ÿæˆsoui_demo.slnå·¥ç¨‹[1=YES;Other=No]:
 if %selected% neq 1 (
 	goto :eof
 ) 
@@ -52,9 +52,9 @@ Echo can't find env variable SOUIPATH, clone soui core and install wizard first,
 goto error
 )
 
-Echo µ±Ç°Ä¿Â¼£º"%cd%"
+Echo å½“å‰ç›®å½•ï¼š"%cd%"
 
-for /f "tokens=1" %%a in ('dir /ad ^|find "¸öÄ¿Â¼"') do (
+for /f "tokens=1" %%a in ('dir /ad ^|find "ä¸ªç›®å½•"') do (
 	set all=%%a
 )
 
@@ -70,7 +70,7 @@ for /f "tokens=* eol=." %%a in ('dir /ad /b') do (
  )
 goto :createbat
 :error
-Echo "error ÓĞÒ»Ğ©´íÎóÇë¼ì²éÇ°ÃæµÄÊä³ö"
+Echo "error æœ‰ä¸€äº›é”™è¯¯è¯·æ£€æŸ¥å‰é¢çš„è¾“å‡º"
 goto :eof
 
 :inipro
@@ -102,8 +102,8 @@ SET selected=
 SET vsvarbat=
 SET target=
 
-rem Ñ¡Ôñ±àÒë°æ±¾
-SET /p selected=1.Ñ¡Ôñ±àÒë°æ±¾[1=x86;2=x64]:
+rem é€‰æ‹©ç¼–è¯‘ç‰ˆæœ¬
+SET /p selected=1.é€‰æ‹©ç¼–è¯‘ç‰ˆæœ¬[1=x86;2=x64]:
 if %selected%==1 (
 	SET target=x86
 ) else if %selected%==2 (
@@ -115,8 +115,8 @@ if %selected%==1 (
 
 SET proj_ext=
 
-rem Ñ¡Ôñ¿ª·¢»·¾³
-SET /p selected=2.Ñ¡Ôñ¿ª·¢»·¾³[1=2008;2=2010;3=2012;4=2013;5=2015;6=2017;7=2005]:
+rem é€‰æ‹©å¼€å‘ç¯å¢ƒ
+SET /p selected=2.é€‰æ‹©å¼€å‘ç¯å¢ƒ[1=2008;2=2010;3=2012;4=2013;5=2015;6=2017;7=2005]:
 
 if %selected%==1 (
 	SET specs=win32-msvc2008

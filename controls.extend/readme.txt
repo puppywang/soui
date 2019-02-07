@@ -1,6 +1,6 @@
-ÕâÀïÌá¹©À©Õ¹¿Ø¼ş¡£ËùÓĞÀ©Õ¹¿Ø¼şÔÚÊ¹ÓÃÇ°ÏÈ×¢²áµ½ÏµÍ³¡£
-¼Ù¶¨Ò»¸ö¿Ø¼şÃûÎªCTestCtrl
-¿Ø¼ş×¢²á:
+è¿™é‡Œæä¾›æ‰©å±•æ§ä»¶ã€‚æ‰€æœ‰æ‰©å±•æ§ä»¶åœ¨ä½¿ç”¨å‰å…ˆæ³¨å†Œåˆ°ç³»ç»Ÿã€‚
+å‡å®šä¸€ä¸ªæ§ä»¶åä¸ºCTestCtrl
+æ§ä»¶æ³¨å†Œ:
 	SApplication::getSingleton().RegisterWndFactory(TplSWindowFactory<CTestCtrl>());
-·´×¢²á:
+åæ³¨å†Œ:
 	SApplication::getSingleton().UnregisterWndFactory(CTestCtrl::GetClassName());

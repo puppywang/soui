@@ -174,7 +174,14 @@ add_subdirectory(components)
 #
 #
 add_subdirectory(demo)
+
+if (EXISTS "${CMAKE_SOURCE_DIR}/demos/CMakeLists.txt")
+message("Add demos")
+add_subdirectory(demos)
+else()
 include(__cmake/soui-demo.cmake)
+message("No demos")
+endif()
 
 message(STATUS "COM_LIBS: ${COM_LIBS}")
 message(STATUS "CORE_LIBS: ${CORE_LIBS}")
